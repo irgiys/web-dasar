@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Tugas 1</title>
+      <!--
+      NIM   : 211351068
+      NAMA  : Irgiyansyah
+      KELAS : Malam b
+   --></head>
+   <body>
+      <table>
+         <tr>
+            <td rowspan="9">
+               <img src="https://www.w3schools.com/html/img_chania.jpg" alt="" />
+            </td>
+            <td colspan="3">
+               <h1>Input Pendaftaran</h1>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="email">E-mail</label>
+            </td>
+            <td>:</td>
+            <td>
+               <input type="email" name="email" id="email" />
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="password">Password</label>
+            </td>
+            <td>:</td>
+            <td>
+               <input type="password" name="password" id="password" />
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="jenis_kelamin">Jenis Kelamin</label>
+            </td>
+            <td>:</td>
+            <td>
+               <input type="radio" name="jenis_kelamin" id="laki_laki" />
+               <label for="laki_laki">Laki-laki</label>
+               <br />
+               <input type="radio" name="jenis_kelamin" id="perempuan" />
+               <label for="perempuan">perempuan</label>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="tanggal_lahir"> Tanggal Lahir </label>
+            </td>
+            <td>:</td>
+            <td>
+               <input type="date" name="tanggal_lahir" id="tanggal_lahir" />
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="hobi"> Hoby </label>
+            </td>
+            <td>:</td>
+            <td>
+               <select name="hobi" id="hobi">
+                  <option value="tidur">Tidur</option>
+                  <option value="makan">Makan</option>
+                  <option value="olahraga">Olahraga</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="">Kendaraan yang dimiliki</label>
+            </td>
+            <td>:</td>
+            <td>
+               <input type="checkbox" id="sepeda" name="sepeda" value="Sepeda" />
+               <label for="sepeda">Sepeda</label><br />
+               <input type="checkbox" id="motor" name="motor" value="Motor" />
+               <label for="motor">Motor</label><br />
+               <input type="checkbox" id="mobil" name="mobil" value="Mobil" />
+               <label for="mobil">Mobil</label><br />
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="pesan_kesan">Pesan dan kesan</label>
+            </td>
+            <td>:</td>
+            <td>
+               <textarea name="pesan kesan" id="pesan_kesan" cols="30" rows="2"></textarea>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="3" align="center">
+               <button type="submit">Login</button>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>
