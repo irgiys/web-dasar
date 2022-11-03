@@ -17,14 +17,14 @@
          crossorigin="anonymous"
       />
    </head>
-   <body>
+   <body class="d-flex flex-column min-vh-100">
       <div class="w-full d-flex align-items-center flex-column py-4 bg-primary text-light">
          <h1 class="fs-1 fw-semibold">My first Bootstrap 5 page</h1>
          <p>Resize this responsive page to see the effect!</p>
       </div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
          <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
                <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="#">Active</a>
                   <a class="nav-link" href="#">Link</a>
@@ -33,7 +33,21 @@
                </div>
             </div>
          </div>
+         <div class="container-fluid">
+            <button
+               class="navbar-toggler"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarToggleExternalContent"
+               aria-controls="navbarToggleExternalContent"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+            >
+               <span class="navbar-toggler-icon"></span>
+            </button>
+         </div>
       </nav>
+
       <div class="container mt-5 mb-4">
          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
@@ -91,7 +105,7 @@
       </div>
       <div class="container">
          <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-md-4">
                <h2>Some Links</h2>
                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, itaque?</p>
                <ul class="nav flex-column nav-pills">
@@ -109,7 +123,7 @@
                   </li>
                </ul>
             </div>
-            <div class="col-8">
+            <div class="col-12 col-md-8 pt-md-0 pt-4">
                <h1>Title Heading</h1>
                <p>Some text...</p>
                <p>
@@ -120,7 +134,7 @@
             </div>
          </div>
       </div>
-      <footer class="text-white d-flex justify-content-center py-4 mt-5 bg-dark font-semibold">
+      <footer class="text-white d-flex justify-content-center py-4 mt-3 bg-dark font-semibold">
          Coded by Irgiyansyah
       </footer>
       <script
